@@ -3,6 +3,7 @@ import { Layout, Menu, Breadcrumb } from 'antd';
 const { Header, Content, Footer } = Layout
 import Navbar from './components/Navbar/Navbar'
 import Coverpage from './components/Coverpage/Coverpage';
+import PicDetailsDemo from './components/Projectgallery/Projectgallery';
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 				<Content style={{marginTop: 64, height:'100%' }}>
 					<Coverpage/>
 					haha
+					<PicDetailsDemo />
 				</Content>
 			</Layout>
 		);

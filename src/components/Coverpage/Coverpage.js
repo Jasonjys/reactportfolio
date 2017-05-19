@@ -7,9 +7,8 @@ class Coverpage extends Component {
 				<header>
 					<div className="header-content">
 						<div className="header-content-inner">
-							<h1 id="homeHeading">Yaoshen Jiang</h1>
-							<hr/>
-							<h2 id="homeHeading">Software Developer</h2>
+							<h1>Yaoshen Jiang</h1>
+							<h2>Software Developer</h2>
 						</div>
 						<a href="#about" className="btn btn-primary btn-xl page-scroll">Find Out More</a>
 					</div>
