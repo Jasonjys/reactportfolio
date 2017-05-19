@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Layout, Menu, Breadcrumb } from 'antd';
+const { Header, Content, Footer } = Layout
+import Navbar from './components/Navbar/Navbar'
+import Coverpage from './components/Coverpage/Coverpage';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<Layout style={{ height:'100%' }}>
+				<Header style={{ position: 'fixed', width: '100%' }}>
+					<Navbar />
+				</Header>
+				<Content style={{marginTop: 64, height:'100%' }}>
+					<Coverpage/>
+					haha
+				</Content>
+			</Layout>
+		);
+	}
 }
 
 export default App;
