@@ -1,0 +1,22 @@
+.item-container {
+  position: relative;
+  display: block; }
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
