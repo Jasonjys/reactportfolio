@@ -32,7 +32,7 @@ class Imageitem extends Component {
 						onMouseLeave={this.toggleHover}
 					/>
 					<div className="middle" style={styleForText}>
-						<div className="text">Project</div>
+						<div className="hover-text">Project</div>
 					</div>
 				</div>
 			</div>

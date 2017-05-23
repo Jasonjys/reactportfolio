@@ -10,7 +10,6 @@ class Coverpage extends Component {
 							<h1>Yaoshen Jiang</h1>
 							<h2>Software Developer</h2>
 						</div>
-						<a href="#about" className="btn btn-primary btn-xl page-scroll">Find Out More</a>
 					</div>
 				</header>
 		);

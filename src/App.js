@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar'
 import Coverpage from './components/Coverpage/Coverpage';
 import Image from './components/Imageitem/Imageitem';
 import Gallerygrid from './components/Gallerygrid/Gallerygrid';
+import Timelineitem from './components/Timelineitem/Timelineitem';
+import Timeline from './components/Timeline/Timeline';
 import pic from '../public/img/portfolio/thumbnails/1.jpg'
 import './App.css';
 
@@ -18,6 +20,7 @@ class App extends Component {
 				<Content style={{marginTop: 64, height:'100%' }}>
 					<Coverpage />
 					<Gallerygrid />
+					<Timeline />
 				</Content>
 			</Layout>
 		);
