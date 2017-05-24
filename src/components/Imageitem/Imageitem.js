@@ -12,27 +12,6 @@ class Imageitem extends Component {
 		this.setState({hover: !this.state.hover})
 	};
 
-	handleClick = (e) => {
-		this.props.onClick(e)
-		// this.setState({
-		// 	visible: true,
-		// });
-	};
-
-	handleCancel = (e) => {
-		console.log(e);
-		this.setState({
-			visible: false
-		});
-	};
-
-	handleOk = (e) => {
-		console.log(e);
-		this.setState({
-			visible: false,
-		});
-	};
-
 	render () {
 		let styleForImage, styleForText;
 		if (this.state.hover) {
@@ -47,10 +26,10 @@ class Imageitem extends Component {
 			<div className="col-lg-4 col-sm-6 no-padding">
 				<div 
 					className="item-container"
-					onClick={this.handleClick}
+					onClick={this.props.onClick}
 				>
 					<img 
-						src={this.props.pic}
+						src={this.props.img}
 						style={styleForImage}
 						className="image"
 						onMouseEnter={this.toggleHover}
@@ -60,17 +39,6 @@ class Imageitem extends Component {
 						<div className="hover-text">Project</div>
 					</div>
 				</div>
-
-				<Modal
-					title="Basic Modal"
-					visible={this.state.visible}
-					onOk={this.handleOk}
-					onCancel={this.handleCancel}
-				>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-					<p>Some contents...</p>
-				</Modal>
 			</div>
 		);
 	}
