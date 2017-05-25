@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'antd';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
-import RaisedButton from 'material-ui/RaisedButton';
+//import RaisedButton from 'material-ui/RaisedButton';
 import Imageitem from '../Imageitem/Imageitem'
 import image1 from '../../../public/img/portfolio/thumbnails/1.jpg'
 import image2 from '../../../public/img/portfolio/thumbnails/1.jpg'
@@ -15,7 +14,7 @@ import './Gallerygrid.css'
 
 
 const customContentStyle = {
-		width: '80%',
+		width: '45%',
 		maxWidth: 'none',
 };
 
@@ -70,7 +69,7 @@ class Gallerygrid extends Component {
 		});
 	};
 
-	handleClose = (e) => {
+	handleClose = () => {
 		const newImages = this.state.images.map((item) => {
 			if(item.visible ) {
 				return Object.assign({}, item, {
@@ -88,14 +87,8 @@ class Gallerygrid extends Component {
 	render () {
 		const actions = [
 				<FlatButton
-					label="Cancel"
+					label="Close"
 					primary={true}
-					onTouchTap={this.handleClose}
-				/>,
-				<FlatButton
-					label="Submit"
-					primary={true}
-					keyboardFocused={true}
 					onTouchTap={this.handleClose}
 				/>,
 			];
@@ -116,16 +109,70 @@ class Gallerygrid extends Component {
 				</div>
 
 				<Dialog
-					title="Dialog With Custom Width"
+					title="Dialog1"
 					actions={actions}
 					modal={false}
 					contentStyle={customContentStyle}
 					open={this.state.images[0].visible}
 					onRequestClose={this.handleClose}
 				>
-					This dialog spans the entire width of the screen.
+					<p>Description goes here</p>
+					<li>- sentence1</li>
+					<li>- sentence2</li>
+					<li>- sentence3</li>
+					<li>- sentence4</li>
+					<li>- sentence5</li>
+					<li>- sentence6</li>
 				</Dialog>
 
+				<Dialog
+					title="Dialog2"
+					actions={actions}
+					modal={false}
+					contentStyle={customContentStyle}
+					open={this.state.images[1].visible}
+					onRequestClose={this.handleClose}
+				>
+					<li>- sentence1</li>
+					<li>- sentence2</li>
+					<li>- sentence3</li>
+					<li>- sentence4</li>
+					<li>- sentence5</li>
+					<li>- sentence6</li>
+				</Dialog>
+
+				<Dialog
+					title="Dialog3"
+					actions={actions}
+					modal={false}
+					contentStyle={customContentStyle}
+					open={this.state.images[2].visible}
+					onRequestClose={this.handleClose}
+				>
+					<p>Description goes here</p>
+					<li>- sentence1</li>
+					<li>- sentence2</li>
+					<li>- sentence3</li>
+					<li>- sentence4</li>
+					<li>- sentence5</li>
+					<li>- sentence6</li>
+				</Dialog>
+
+				<Dialog
+					title="Dialog4"
+					actions={actions}
+					modal={false}
+					contentStyle={customContentStyle}
+					open={this.state.images[3].visible}
+					onRequestClose={this.handleClose}
+				>
+					<li>- sentence1</li>
+					<li>- sentence2</li>
+					<li>- sentence3</li>
+					<li>- sentence4</li>
+					<li>- sentence5</li>
+					<li>- sentence6</li>
+				</Dialog>
 			</div>
 		);
 	};

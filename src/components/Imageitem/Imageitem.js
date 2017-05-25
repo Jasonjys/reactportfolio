@@ -9,7 +9,17 @@ class Imageitem extends Component {
 	};
 
 	toggleHover = () => {
-		this.setState({hover: !this.state.hover})
+		console.log("hover");
+		const currentState = this.state.hover;
+		this.setState({hover: !currentState});
+	};
+
+	handleEnter = () => {
+		this.setState({hover: true});
+	};
+
+	handleLeave = () => {
+		this.setState({hover: false});
 	};
 
 	render () {
@@ -32,8 +42,8 @@ class Imageitem extends Component {
 						src={this.props.img}
 						style={styleForImage}
 						className="image"
-						onMouseEnter={this.toggleHover}
-						onMouseLeave={this.toggleHover}
+						onMouseEnter={this.handleEnter}
+						onMouseLeave={this.handleLeave}
 					/>
 					<div className="middle" style={styleForText}>
 						<div className="hover-text">Project</div>
