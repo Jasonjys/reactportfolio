@@ -8,12 +8,6 @@ class Imageitem extends Component {
         visible: false
     };
 
-    toggleHover = () => {
-        console.log("hover");
-        const currentState = this.state.hover;
-        this.setState({hover: !currentState});
-    };
-
     handleEnter = () => {
         this.setState({hover: true});
     };
