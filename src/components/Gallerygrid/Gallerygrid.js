@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
-//import RaisedButton from 'material-ui/RaisedButton';
 import Imageitem from '../Imageitem/Imageitem'
 import image1 from '../../../public/img/portfolio/fullsize/1.jpg'
 import image2 from '../../../public/img/portfolio/fullsize/1.jpg'

@@ -3,17 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^2.10.1",
+    "antd": "^2.11.2",
     "material-ui": "^0.18.1",
     "moment": "^2.18.1",
-    "ramda": "^0.24.0",
-    "rc-queue-anim": "^0.13.3",
-    "rc-tween-one": "^1.2.5",
     "react": "^15.5.4",
-    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "react-event-timeline": "^1.2.4",
-    "react-image-timeline": "^0.2.1",
     "react-tap-event-plugin": "^2.0.1",
     "react-transition-group": "^1.1.3"
   },

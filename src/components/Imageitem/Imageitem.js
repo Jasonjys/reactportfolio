@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'antd';
 import './Imageitem.css'
 
 class Imageitem extends Component {
@@ -19,7 +18,7 @@ class Imageitem extends Component {
     render () {
         let styleForImage, styleForText;
         if (this.state.hover) {
-            styleForImage = {opacity: '0.3'};
+            styleForImage = {opacity: '0.3', cursor: 'pointer'};
             styleForText = {opacity: '1'};
 
         } else {
@@ -31,13 +30,14 @@ class Imageitem extends Component {
                 <div 
                     className="item-container"
                     onClick={this.props.onClick}
+                    onMouseEnter={this.handleEnter}
+                    onMouseLeave={this.handleLeave}
                 >
-                    <img 
+                    <img
+                        alt=""
                         src={this.props.img}
                         style={styleForImage}
                         className="image"
-                        onMouseEnter={this.handleEnter}
-                        onMouseLeave={this.handleLeave}
                     />
                     <div className="middle" style={styleForText}>
                         <div className="hover-text">Project</div>
