@@ -3,12 +3,12 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 //import RaisedButton from 'material-ui/RaisedButton';
 import Imageitem from '../Imageitem/Imageitem'
-import image1 from '../../../public/img/portfolio/thumbnails/1.jpg'
-import image2 from '../../../public/img/portfolio/thumbnails/1.jpg'
-import image3 from '../../../public/img/portfolio/thumbnails/1.jpg'
-import image4 from '../../../public/img/portfolio/thumbnails/1.jpg'
-import image5 from '../../../public/img/portfolio/thumbnails/1.jpg'
-import image6 from '../../../public/img/portfolio/thumbnails/1.jpg'
+import image1 from '../../../public/img/portfolio/fullsize/1.jpg'
+import image2 from '../../../public/img/portfolio/fullsize/1.jpg'
+import image3 from '../../../public/img/portfolio/fullsize/1.jpg'
+import image4 from '../../../public/img/portfolio/fullsize/1.jpg'
+import image5 from '../../../public/img/portfolio/fullsize/1.jpg'
+import image6 from '../../../public/img/portfolio/fullsize/1.jpg'
 
 import './Gallerygrid.css'
 
