@@ -7,8 +7,8 @@ class Coverpage extends Component {
                 <header>
                     <div className="header-content">
                         <div className="header-content-inner">
-                            <h1 style={{color: "white"}}>Yaoshen Jiang</h1>
-                            <h2 style={{color: "white"}}>Software Developer</h2>
+                            <h1>Yaoshen Jiang</h1>
+                            <h2>Software Developer</h2>
                         </div>
                     </div>
                 </header>

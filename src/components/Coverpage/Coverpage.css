@@ -10,32 +10,35 @@ header {
   header .header-content {
     position: relative;
     text-align: center;
-    padding: 100px 15px 100px;
+    top: 50%;
+    padding: 250px 15px 100px;
     width: 100%; }
     header .header-content .header-content-inner h1 {
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
-      font-size: 30px; }
+      font-size: 30px;
+      color: white; }
     header .header-content .header-content-inner h2 {
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 0;
-      font-size: 25px; }
+      font-size: 25px;
+      color: white; }
 
 @media (min-width: 768px) {
   header {
     min-height: calc(100% - 64px); }
-  header .header-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px; }
-  header .header-content .header-content-inner {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto; }
-  header .header-content .header-content-inner h1 {
-    font-size: 50px; } }
+    header .header-content {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 50px; }
+    header .header-content .header-content-inner {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
+    header .header-content .header-content-inner h1 {
+      font-size: 50px; } }
