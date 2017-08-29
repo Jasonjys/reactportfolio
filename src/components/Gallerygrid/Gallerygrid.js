@@ -22,31 +22,37 @@ class Gallerygrid extends Component {
             {
                 id: 1,
                 image: image1,
+                text: 'project1',
                 visible: false,
             },
             {
                 id: 2,
                 image: image1,
+                text: 'project2',
                 visible: false,
             },
             {
                 id: 3,
                 image: image1,
+                text: 'project3',
                 visible: false,
             },
             {
                 id: 4,
                 image: image1,
+                text: 'project4',
                 visible: false,
             },
             {
                 id: 5,
                 image: image1,
+                text: 'project5',
                 visible: false,
             },
             {
                 id: 6,
                 image: image1,
+                text: 'project6',
                 visible: false,
             },
         ]
@@ -89,6 +95,7 @@ class Gallerygrid extends Component {
         const items = this.state.items.map((item) =>(
                 <Imageitem 
                     img={item.image}
+                    text={item.text}
                     key={item.id}
                     onClick={() => this.handleClick(item.id)}
                 />
