@@ -17,7 +17,7 @@ class Imageitem extends Component {
 
     render () {
         let styleForImage, styleForText, text;
-        text = this.props.text ? this.props.text : this.state.text
+        text = this.props.text || this.state.text;
         if (this.state.hover) {
             styleForImage = {opacity: '0.3', cursor: 'pointer'};
             styleForText = {opacity: '1'};
