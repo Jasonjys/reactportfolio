@@ -11,7 +11,6 @@ import image6 from '../../../public/img/portfolio/fullsize/1.jpg'
 
 import './Gallerygrid.css'
 
-
 const customContentStyle = {
         width: '45%',
         maxWidth: 'none',
@@ -19,7 +18,7 @@ const customContentStyle = {
 
 class Gallerygrid extends Component {
     state = {
-        images: [
+        items: [
             {
                 id: 1,
                 image: image1,
@@ -54,32 +53,28 @@ class Gallerygrid extends Component {
     };
 
     handleClick = (id) => {
-        const newImages = this.state.images.map((item) => {
+        const newItems = this.state.items.map((item) => {
             if(item.id === id) {
-                return Object.assign({}, item, {
-                    visible: !item.visable
-                });
+                return {...item, visible: !item.visible}
             } else {
                 return item;
             }
         });
         this.setState({
-            images: newImages
+            items: newItems
         });
     };
 
     handleClose = () => {
-        const newImages = this.state.images.map((item) => {
-            if(item.visible ) {
-                return Object.assign({}, item, {
-                    visible: false
-                });
+        const newItems = this.state.items.map((item) => {
+            if (item.visible) {
+                return {...item, visible: false}
             } else {
                 return item;
             }
         });
         this.setState({
-            images: newImages
+            items: newItems
         });
     };
 
@@ -91,7 +86,7 @@ class Gallerygrid extends Component {
                     onTouchTap={this.handleClose}
                 />,
             ];
-        const items = this.state.images.map((item) =>(
+        const items = this.state.items.map((item) =>(
                 <Imageitem 
                     img={item.image}
                     key={item.id}
@@ -112,7 +107,7 @@ class Gallerygrid extends Component {
                     actions={actions}
                     modal={false}
                     contentStyle={customContentStyle}
-                    open={this.state.images[0].visible}
+                    open={this.state.items[0].visible}
                     onRequestClose={this.handleClose}
                 >
                     <p>Description goes here</p>
@@ -129,7 +124,7 @@ class Gallerygrid extends Component {
                     actions={actions}
                     modal={false}
                     contentStyle={customContentStyle}
-                    open={this.state.images[1].visible}
+                    open={this.state.items[1].visible}
                     onRequestClose={this.handleClose}
                 >
                     <li>- sentence1</li>
@@ -145,7 +140,7 @@ class Gallerygrid extends Component {
                     actions={actions}
                     modal={false}
                     contentStyle={customContentStyle}
-                    open={this.state.images[2].visible}
+                    open={this.state.items[2].visible}
                     onRequestClose={this.handleClose}
                 >
                     <p>Description goes here</p>
@@ -162,7 +157,7 @@ class Gallerygrid extends Component {
                     actions={actions}
                     modal={false}
                     contentStyle={customContentStyle}
-                    open={this.state.images[3].visible}
+                    open={this.state.items[3].visible}
                     onRequestClose={this.handleClose}
                 >
                     <li>- sentence1</li>

@@ -4,7 +4,7 @@ import './Imageitem.css'
 class Imageitem extends Component {
     state = {
         hover: false,
-        visible: false
+        text: 'text'
     };
 
     handleEnter = () => {
@@ -40,7 +40,7 @@ class Imageitem extends Component {
                         className="image"
                     />
                     <div className="middle" style={styleForText}>
-                        <div className="hover-text">Project</div>
+                        <div className="hover-text">{this.state.text}</div>
                     </div>
                 </div>
             </div>
