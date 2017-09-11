@@ -86,19 +86,20 @@ class Gallerygrid extends Component {
 
     render () {
         const actions = [
-                <FlatButton
-                    label="Close"
-                    primary={true}
-                    onTouchTap={this.handleClose}
-                />,
-            ];
-        const items = this.state.items.map((item) =>(
-                <Imageitem 
-                    img={item.image}
-                    text={item.text}
-                    key={item.id}
-                    onClick={() => this.handleClick(item.id)}
-                />
+            <FlatButton
+                label="Close"
+                primary={true}
+                onTouchTap={this.handleClose}
+            />,
+        ];
+
+        const items = this.state.items.map((item) => (
+            <Imageitem 
+                img={item.image}
+                text={item.text}
+                key={item.id}
+                onClick={() => this.handleClick(item.id)}
+            />
         ))
         return (
             <div className="gallery-container">
