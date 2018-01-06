@@ -19,6 +19,9 @@ class App extends Component {
                         <Coverpage img={ CoverImg } />
                         <Timeline />
                         <Gallerygrid />
+                        <Footer style={{ textAlign: 'center' }}>
+                            Footer
+                        </Footer>
                     </Content>
                 </Layout>
             </MuiThemeProvider>
