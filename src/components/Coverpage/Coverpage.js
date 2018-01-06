@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
-import './Coverpage.css'
+import React from 'react';
+import './Coverpage.css';
 
-class Coverpage extends Component {
-    render () {
-        return (
-                <header>
-                    <div className="header-content">
-                        <div className="header-content-inner">
-                            <h1>Yaoshen Jiang</h1>
-                            <h2>Software Developer</h2>
-                        </div>
-                    </div>
-                </header>
-        );
-    }
+const styles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'noRepeat',
+    backgroundSize: 'cover'
+}
+
+const Coverpage = ({img}) => {
+    return (
+        <div style={{...styles, backgroundImage: `url(${img})`}}>
+            <h1 className='title'>Yaoshen Jiang</h1>
+            <h2 className='sub-title'>Software Developer</h2>
+        </div>
+    );
 }
 
 export default Coverpage;

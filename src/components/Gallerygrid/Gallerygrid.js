@@ -12,45 +12,45 @@ import image6 from '../../../public/img/portfolio/fullsize/1.jpg'
 import './Gallerygrid.css'
 
 const customContentStyle = {
-        width: '45%',
-        maxWidth: 'none',
+    width: '45%',
+    maxWidth: 'none',
 };
 
 class Gallerygrid extends Component {
     state = {
         items: [
             {
-                id: 1,
+                id: 0,
                 image: image1,
                 text: 'project1',
                 visible: false,
             },
             {
-                id: 2,
+                id: 1,
                 image: image1,
                 text: 'project2',
                 visible: false,
             },
             {
-                id: 3,
+                id: 2,
                 image: image1,
                 text: 'project3',
                 visible: false,
             },
             {
-                id: 4,
+                id: 3,
                 image: image1,
                 text: 'project4',
                 visible: false,
             },
             {
-                id: 5,
+                id: 4,
                 image: image1,
                 text: 'project5',
                 visible: false,
             },
             {
-                id: 6,
+                id: 5,
                 image: image1,
                 text: 'project6',
                 visible: false,
@@ -61,7 +61,7 @@ class Gallerygrid extends Component {
     handleClick = (id) => {
         const newItems = this.state.items.map((item) => {
             if(item.id === id) {
-                return {...item, visible: !item.visible}
+                return {...item, visible: true}
             } else {
                 return item;
             }
@@ -101,6 +101,26 @@ class Gallerygrid extends Component {
                 onClick={() => this.handleClick(item.id)}
             />
         ))
+
+        const dialogs = this.state.items.map((item, index) => (
+            <Dialog
+                title={`Dialog${index}`}
+                key={item.id}
+                actions={actions}
+                modal={false}
+                contentStyle={customContentStyle}
+                open={item.visible}
+                onRequestClose={this.handleClose}
+            >
+                <p>Description goes here</p>
+                <li>- sentence1</li>
+                <li>- sentence2</li>
+                <li>- sentence3</li>
+                <li>- sentence4</li>
+                <li>- sentence5</li>
+                <li>- sentence6</li>
+            </Dialog>
+        ))
         return (
             <div className="gallery-container">
                 <div className="row">
@@ -110,71 +130,7 @@ class Gallerygrid extends Component {
                     {items}
                 </div>
 
-                <Dialog
-                    title="Dialog1"
-                    actions={actions}
-                    modal={false}
-                    contentStyle={customContentStyle}
-                    open={this.state.items[0].visible}
-                    onRequestClose={this.handleClose}
-                >
-                    <p>Description goes here</p>
-                    <li>- sentence1</li>
-                    <li>- sentence2</li>
-                    <li>- sentence3</li>
-                    <li>- sentence4</li>
-                    <li>- sentence5</li>
-                    <li>- sentence6</li>
-                </Dialog>
-
-                <Dialog
-                    title="Dialog2"
-                    actions={actions}
-                    modal={false}
-                    contentStyle={customContentStyle}
-                    open={this.state.items[1].visible}
-                    onRequestClose={this.handleClose}
-                >
-                    <li>- sentence1</li>
-                    <li>- sentence2</li>
-                    <li>- sentence3</li>
-                    <li>- sentence4</li>
-                    <li>- sentence5</li>
-                    <li>- sentence6</li>
-                </Dialog>
-
-                <Dialog
-                    title="Dialog3"
-                    actions={actions}
-                    modal={false}
-                    contentStyle={customContentStyle}
-                    open={this.state.items[2].visible}
-                    onRequestClose={this.handleClose}
-                >
-                    <p>Description goes here</p>
-                    <li>- sentence1</li>
-                    <li>- sentence2</li>
-                    <li>- sentence3</li>
-                    <li>- sentence4</li>
-                    <li>- sentence5</li>
-                    <li>- sentence6</li>
-                </Dialog>
-
-                <Dialog
-                    title="Dialog4"
-                    actions={actions}
-                    modal={false}
-                    contentStyle={customContentStyle}
-                    open={this.state.items[3].visible}
-                    onRequestClose={this.handleClose}
-                >
-                    <li>- sentence1</li>
-                    <li>- sentence2</li>
-                    <li>- sentence3</li>
-                    <li>- sentence4</li>
-                    <li>- sentence5</li>
-                    <li>- sentence6</li>
-                </Dialog>
+                {dialogs}
             </div>
         );
     };
