@@ -1,12 +1,12 @@
 .item-container {
+  display: flex;
+  max-height: 45%;
+  max-width: 45%;
   position: relative;
-  display: block;
 }
 
 .image {
   width: 100%;
-  height: auto;
-  display: block;
 }
 
 .hover-text {

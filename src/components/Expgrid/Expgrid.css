@@ -1,0 +1,15 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  height: 100%; }
+
+.card-container {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }

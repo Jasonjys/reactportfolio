@@ -42,19 +42,7 @@ class Gallerygrid extends Component {
                 image: image1,
                 text: 'project4',
                 visible: false,
-            },
-            {
-                id: 4,
-                image: image1,
-                text: 'project5',
-                visible: false,
-            },
-            {
-                id: 5,
-                image: image1,
-                text: 'project6',
-                visible: false,
-            },
+            }
         ]
     };
 
@@ -123,10 +111,8 @@ class Gallerygrid extends Component {
         ))
         return (
             <div className="gallery-container">
-                <div className="row">
-                    <div className="gallery-title">Project Gallery</div>
-                </div>
-                <div className="row">
+                <div className="gallery-title">Project Gallery</div>
+                <div style={{display: 'flex', width: '100%', height: '90%', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center'}}>
                     {items}
                 </div>
 

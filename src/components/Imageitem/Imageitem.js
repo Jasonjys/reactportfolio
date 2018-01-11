@@ -27,22 +27,22 @@ class Imageitem extends Component {
             styleForText = {opacity: '0'};
         }
         return (
-            <div className="col-lg-4 col-sm-6 no-padding">
-                <div 
-                    className="item-container"
-                    onClick={this.props.onClick}
-                    onMouseEnter={this.handleEnter}
-                    onMouseLeave={this.handleLeave}
-                >
+            <div 
+                className="item-container"
+                onClick={this.props.onClick}
+                onMouseEnter={this.handleEnter}
+                onMouseLeave={this.handleLeave}
+            >
+                <div style={{display: 'flex'}}>
                     <img
                         alt=""
                         src={this.props.img}
                         style={styleForImage}
                         className="image"
                     />
-                    <div className="middle" style={styleForText}>
-                        <div className="hover-text">{text}</div>
-                    </div>
+                </div>
+                <div className="middle" style={styleForText}>
+                    <div className="hover-text">{text}</div>
                 </div>
             </div>
         );

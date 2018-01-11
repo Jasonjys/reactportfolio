@@ -9,6 +9,9 @@ import CoverImg from './components/Coverpage/coverImg.jpg';
 import './App.css';
 const { Content, Footer } = Layout;
 
+import Expgrid from './components/Expgrid/Expgrid';
+
+
 class App extends Component {
     render() {
         return (
@@ -17,7 +20,8 @@ class App extends Component {
                     <Navbar />
                     <Content style={{ height:'100%', width: '100%' }}>
                         <Coverpage img={ CoverImg } />
-                        <Timeline />
+                        {/* <Timeline /> */}
+                        <Expgrid />
                         <Gallerygrid />
                         <Footer style={{ textAlign: 'center' }}>
                             Footer

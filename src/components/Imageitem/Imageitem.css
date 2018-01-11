@@ -1,11 +1,11 @@
 .item-container {
-  position: relative;
-  display: block; }
+  display: flex;
+  max-height: 45%;
+  max-width: 45%;
+  position: relative; }
 
 .image {
-  width: 100%;
-  height: auto;
-  display: block; }
+  width: 100%; }
 
 .hover-text {
   color: white;
