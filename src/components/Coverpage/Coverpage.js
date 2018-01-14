@@ -14,9 +14,9 @@ const styles = {
 
 const Coverpage = ({img}) => {
     return (
-        <div style={{...styles, backgroundImage: `url(${img})`}}>
+        <div id='home' style={{...styles, backgroundImage: `url(${img})`}}>
             <h1 className='title'>Yaoshen Jiang</h1>
-            <h2 className='sub-title'>Software Developer</h2>
+            <h2 className='sub-title'>a passionate software developer</h2>
         </div>
     );
 }

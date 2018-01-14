@@ -1,3 +1,10 @@
+.exp-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
 .grid-container {
     display: flex;
     flex-direction: column;
@@ -14,4 +21,24 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.ant-card-meta-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ant-card-cover {
+    height: 70%;
+}
+
+.ant-card-meta-description{
+    color: white;
+}
+
+@media (max-width: 375px) {
+    .exp-title {
+        font-size: 30px;
+    }
 }

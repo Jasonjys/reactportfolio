@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu } from 'antd';
+import './Navbar.css'
 const { Sider} = Layout;
 
 class Navbar extends Component {
@@ -12,14 +13,19 @@ class Navbar extends Component {
                 width={120}
             >
                 <div className="logo" />
-                <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                    <Menu.Item key="1">
+                <Menu 
+                    theme="dark"
+                    mode="inline"
+                    defaultSelectedKeys={['1']}
+                    onClick={(e) => { window.location = `/#${e.key}`;}}
+                >
+                    <Menu.Item key="home">
                         <span className="nav-text">Home</span>
                     </Menu.Item>
-                    <Menu.Item key="2">
+                    <Menu.Item key="experience">
                         <span className="nav-text">Experience</span>
                     </Menu.Item>
-                    <Menu.Item key="3">
+                    <Menu.Item key="projects">
                         <span className="nav-text">Projects</span>
                     </Menu.Item>
                 </Menu>

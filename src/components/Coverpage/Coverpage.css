@@ -5,8 +5,9 @@
 
 .sub-title {
   font-weight: 500;
-  font-size: 25px;
-  color: white; }
+  font-size: 30px;
+  color: white;
+  text-align: center; }
 
 @media (max-width: 667px) {
   .title {

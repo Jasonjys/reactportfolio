@@ -110,7 +110,7 @@ class Gallerygrid extends Component {
             </Dialog>
         ))
         return (
-            <div className="gallery-container">
+            <div id='projects' className="gallery-container">
                 <div className="gallery-title">Project Gallery</div>
                 <div style={{display: 'flex', width: '100%', height: '90%', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center'}}>
                     {items}

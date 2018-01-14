@@ -1,13 +1,21 @@
-.gallery-container{
+.gallery-container {
     height: 100%;
     width: 100%;
     background-color: black;
 }
 
-.gallery-title{
+.gallery-title {
+    display: flex;
     height: 10%;
     color: white;
     font-size: 40px;
+    font-weight: 600;
     padding: 12px 32px;
-    text-align: center;
+    justify-content: center
+}
+
+@media (max-width: 375px) {
+    .gallery-title {
+        font-size: 30px;
+    }
 }
