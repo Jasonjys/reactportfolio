@@ -37,7 +37,14 @@
     color: white;
 }
 
-@media (max-width: 375px) {
+.card {
+    width: 40%;
+    height: 40%;
+    background-color: black;
+    border-color: black;
+}
+
+@media (max-width: 415px) {
     .exp-title {
         font-size: 30px;
     }

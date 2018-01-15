@@ -12,6 +12,6 @@
   padding: 12px 32px;
   justify-content: center; }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .gallery-title {
     font-size: 30px; } }
