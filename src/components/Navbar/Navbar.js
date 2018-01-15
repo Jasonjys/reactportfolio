@@ -17,7 +17,7 @@ class Navbar extends Component {
                     theme="dark"
                     mode="inline"
                     defaultSelectedKeys={['1']}
-                    onClick={(e) => { window.location = `/#${e.key}`;}}
+                    onClick={(e) => { window.location = `/reactportfolio/#${e.key}`;}}
                 >
                     <Menu.Item key="home">
                         <span className="nav-text">Home</span>
