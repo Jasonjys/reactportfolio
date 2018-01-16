@@ -9,6 +9,16 @@
   color: white;
   text-align: center; }
 
+.cover {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 @media (max-width: 667px) {
   .title {
     font-size: 37px; } }

@@ -24,9 +24,9 @@
 }
 
 .ant-card-meta-title {
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
 }
 
 .ant-card-cover {
@@ -34,18 +34,33 @@
 }
 
 .ant-card-meta-description{
-    color: white;
+    color: white !important;
 }
 
 .card {
-    width: 40%;
-    height: 40%;
-    background-color: black;
-    border-color: black;
+    width: 42%;
+    height: 38%;
+    background-color: black !important;
+    border-color: black !important;
 }
 
 @media (max-width: 415px) {
     .exp-title {
         font-size: 30px;
+    }
+    .ant-card-body {
+        padding: 0;
+    }
+    .ant-card-cover {
+        height: 55%;
+    }
+}
+
+@media (min-width: 970px) {
+    .ant-card-meta-title {
+        font-size: 28px !important;
+    }
+    .ant-card-meta-description {
+        font-size: 20px !important;
     }
 }

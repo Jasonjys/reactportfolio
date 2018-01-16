@@ -12,12 +12,11 @@ class Navbar extends Component {
                 onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
                 width={120}
             >
-                <div className="logo" />
                 <Menu 
                     theme="dark"
                     mode="inline"
                     defaultSelectedKeys={['1']}
-                    onClick={(e) => { window.location = `/reactportfolio/#${e.key}`;}}
+                    onClick={({key}) => {window.location = `/reactportfolio/#${key}`;}}
                 >
                     <Menu.Item key="home">
                         <span className="nav-text">Home</span>

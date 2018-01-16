@@ -7,14 +7,6 @@ class Imageitem extends Component {
         text: 'text'
     };
 
-    handleEnter = () => {
-        this.setState({hover: true});
-    };
-
-    handleLeave = () => {
-        this.setState({hover: false});
-    };
-
     render () {
         let styleForImage, styleForText, text;
         text = this.props.text || this.state.text;
@@ -30,12 +22,12 @@ class Imageitem extends Component {
             <div 
                 className="item-container"
                 onClick={this.props.onClick}
-                onMouseEnter={this.handleEnter}
-                onMouseLeave={this.handleLeave}
+                onMouseEnter={() => this.setState({hover: true})}
+                onMouseLeave={() => this.setState({hover: false})}
             >
                 <div style={{display: 'flex'}}>
                     <img
-                        alt=""
+                        alt="project-img"
                         src={this.props.img}
                         style={styleForImage}
                         className="image"
