@@ -12,7 +12,7 @@ import image6 from '../../../public/img/portfolio/fullsize/1.jpg'
 import './Gallerygrid.css'
 
 const customContentStyle = {
-    width: '45%',
+    width: '65%',
     maxWidth: 'none',
 };
 
@@ -22,19 +22,19 @@ class Gallerygrid extends Component {
             {
                 id: 0,
                 image: image1,
-                text: 'project1',
+                text: 'React Portfolio',
                 visible: false,
             },
             {
                 id: 1,
                 image: image1,
-                text: 'project2',
+                text: 'Retrieve',
                 visible: false,
             },
             {
                 id: 2,
                 image: image1,
-                text: 'project3',
+                text: 'Ember Tasks',
                 visible: false,
             },
             {

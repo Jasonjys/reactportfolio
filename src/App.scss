@@ -8,3 +8,19 @@
     align-items: center;
     background-color: black;
 }
+
+.footer {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.highlight {
+    color: deepskyblue;
+}
+
+.highlight:hover {
+    color: red;
+}
+

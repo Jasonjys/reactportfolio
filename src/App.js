@@ -6,6 +6,7 @@ import Coverpage from './components/Coverpage/Coverpage';
 import CoverImg from './components/Coverpage/coverImg.jpg';
 import Expgrid from './components/Expgrid/Expgrid';
 import Gallerygrid from './components/Gallerygrid/Gallerygrid';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import './App.css';
 const { Content, Footer } = Layout;
 
@@ -37,8 +38,16 @@ class App extends Component {
                         <Coverpage img={ CoverImg } />
                         <Expgrid />
                         <Gallerygrid />
-                        <Footer style={{ textAlign: 'center' }}>
-                            Footer
+                        <Footer className='footer'>
+                            <a href="https://www.linkedin.com/in/yaoshen-jiang-305572b0/" target="_blank">
+                                <FontAwesomeIcon icon={["fab", "linkedin"]} size="4x" className="highlight" />  
+                            </a>
+                            <a href="https://github.com/Jasonjys" target="_blank">
+                                <FontAwesomeIcon icon={["fab", "github"]} size="4x" className="highlight" />
+                            </a>
+                            <a href="mailto:jasonjys0511@gmail.com" target="_blank">
+                                <FontAwesomeIcon icon='envelope' size="4x" className="highlight" />
+                            </a>
                         </Footer>
                     </Content>
                 </Layout>
