@@ -6,10 +6,10 @@ import Coverpage from './components/Coverpage/Coverpage';
 import CoverImg from './components/Coverpage/coverImg.jpg';
 import Expgrid from './components/Expgrid/Expgrid';
 import Gallerygrid from './components/Gallerygrid/Gallerygrid';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import Footer from './components/Footer/Footer';
+import exps from './components/Data/WorkExp';
 import './App.css';
-const { Content, Footer } = Layout;
-
+const { Content } = Layout;
 
 class App extends Component {
     state = {
@@ -22,7 +22,7 @@ class App extends Component {
 
     render() {
         const {loading} = this.state;
-        const antIcon = <Icon type="loading" style={{ fontSize: 120 }} spin />;
+        const antIcon = <Icon spin type="loading" style={{ fontSize: 120 }} />;
         if (loading) {
             return (
                 <div className='spin-container'>
@@ -36,25 +36,9 @@ class App extends Component {
                     <Navbar />
                     <Content style={{ height:'100%', width: '100%' }}>
                         <Coverpage img={ CoverImg } />
-                        <Expgrid />
+                        <Expgrid exps={exps} />
                         <Gallerygrid />
-                        <Footer className='footer'>
-                            <a href="https://www.linkedin.com/in/yaoshen-jiang-305572b0/" target="_blank">
-                                <div className='svg-container'>
-                                    <FontAwesomeIcon icon={["fab", "linkedin"]} size="4x" className="highlight" />
-                                </div>
-                            </a>
-                            <a href="https://github.com/Jasonjys" target="_blank">
-                                <div className='svg-container'>
-                                    <FontAwesomeIcon icon={["fab", "github"]} size="4x" className="highlight" />
-                                </div>
-                            </a>
-                            <a href="mailto:jasonjys0511@gmail.com" target="_blank">
-                                <div className='svg-container'>
-                                    <FontAwesomeIcon icon='envelope' size="4x" className="highlight" />
-                                </div>  
-                            </a>
-                        </Footer>
+                        <Footer />
                     </Content>
                 </Layout>
             </MuiThemeProvider>

@@ -29,7 +29,7 @@ class Gallerygrid extends Component {
                 id: 1,
                 image: image1,
                 title: 'Retrieve',
-                summary: 'An ios lost and found app built with React-Native and Firebase',
+                summary: 'An ios lost and found app built with React-Native and Firebase(available in Apple Store)',
                 visible: false,
             },
             {

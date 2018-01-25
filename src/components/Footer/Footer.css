@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  background-color: black !important;
+  justify-content: center; }
+
+.svg-container {
+  padding: 10px 40px; }
+
+.highlight {
+  color: deepskyblue; }
+
+.highlight:hover {
+  color: deeppink; }
