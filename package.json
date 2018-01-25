@@ -2,7 +2,7 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jasonjys.github.io/reactportfolio",
+  "homepage": "http://jasonjys.github.io",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.2",
     "@fortawesome/fontawesome-free-brands": "^5.0.4",

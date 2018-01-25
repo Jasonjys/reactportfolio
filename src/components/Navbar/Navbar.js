@@ -9,14 +9,13 @@ class Navbar extends Component {
             <Sider
                 breakpoint="xxl"
                 collapsedWidth="0"
-                onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
                 width={120}
             >
                 <Menu 
                     theme="dark"
                     mode="inline"
                     defaultSelectedKeys={['1']}
-                    onClick={({key}) => {window.location = `/reactportfolio/#${key}`;}}
+                    onClick={({key}) => {window.location = `/#${key}`;}}
                 >
                     <Menu.Item key="home">
                         <span className="nav-text">Home</span>
