@@ -8,7 +8,6 @@ import image3 from '../../../public/img/portfolio/fullsize/1.jpg'
 import image4 from '../../../public/img/portfolio/fullsize/1.jpg'
 import image5 from '../../../public/img/portfolio/fullsize/1.jpg'
 import image6 from '../../../public/img/portfolio/fullsize/1.jpg'
-
 import './Gallerygrid.css'
 
 const customContentStyle = {
@@ -22,25 +21,28 @@ class Gallerygrid extends Component {
             {
                 id: 0,
                 image: image1,
-                text: 'React Portfolio',
+                title: 'React Portfolio',
+                summary: 'A personal portfolio built with React',
                 visible: false,
             },
             {
                 id: 1,
                 image: image1,
-                text: 'Retrieve',
+                title: 'Retrieve',
+                summary: 'An ios lost and found app built with React-Native and Firebase',
                 visible: false,
             },
             {
                 id: 2,
                 image: image1,
-                text: 'Ember Tasks',
+                title: 'Ember Tasks',
+                summary: 'A simple todo web app built with Ember and Firebase',
                 visible: false,
             },
             {
                 id: 3,
                 image: image1,
-                text: 'project4',
+                title: 'project4',
                 visible: false,
             }
         ]
@@ -84,7 +86,7 @@ class Gallerygrid extends Component {
         const items = this.state.items.map((item) => (
             <Imageitem 
                 img={item.image}
-                text={item.text}
+                title={item.title}
                 key={item.id}
                 onClick={() => this.handleClick(item.id)}
             />
@@ -92,7 +94,7 @@ class Gallerygrid extends Component {
 
         const dialogs = this.state.items.map((item, index) => (
             <Dialog
-                title={`Dialog${index}`}
+                title={item.title}
                 key={item.id}
                 actions={actions}
                 modal={false}
@@ -100,7 +102,7 @@ class Gallerygrid extends Component {
                 open={item.visible}
                 onRequestClose={this.handleClose}
             >
-                <p>Description goes here</p>
+                <p>{item.summary}</p>
                 <li>- sentence1</li>
                 <li>- sentence2</li>
                 <li>- sentence3</li>
@@ -112,10 +114,9 @@ class Gallerygrid extends Component {
         return (
             <div id='projects' className="gallery-container">
                 <div className="gallery-title">Project Gallery</div>
-                <div style={{display: 'flex', width: '100%', height: '90%', flexWrap: 'wrap', justifyContent: 'space-evenly', alignItems: 'center'}}>
+                <div className="gallery-box">
                     {items}
                 </div>
-
                 {dialogs}
             </div>
         );

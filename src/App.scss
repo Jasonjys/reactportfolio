@@ -9,11 +9,14 @@
     background-color: black;
 }
 
+.svg-container {
+    padding: 10px 30px;
+}
+
 .footer {
     display: flex;
-    text-align: center;
     background-color: black;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .highlight {
@@ -21,6 +24,6 @@
 }
 
 .highlight:hover {
-    color: red;
+    color: deeppink;
 }
 

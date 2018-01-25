@@ -4,19 +4,19 @@ import './Imageitem.css'
 class Imageitem extends Component {
     state = {
         hover: false,
-        text: 'text'
+        title: 'title'
     };
 
     render () {
-        let styleForImage, styleForText, text;
-        text = this.props.text || this.state.text;
+        let styleForImage, styleForTitle;
+        const {title} = this.props || this.state;
         if (this.state.hover) {
             styleForImage = {opacity: '0.3', cursor: 'pointer'};
-            styleForText = {opacity: '1'};
+            styleForTitle = {opacity: '1'};
 
         } else {
             styleForImage = {opacity: '1'}
-            styleForText = {opacity: '0'};
+            styleForTitle = {opacity: '0'};
         }
         return (
             <div 
@@ -33,8 +33,8 @@ class Imageitem extends Component {
                         className="image"
                     />
                 </div>
-                <div className="middle" style={styleForText}>
-                    <div className="hover-text">{text}</div>
+                <div className="middle" style={styleForTitle}>
+                    <div className="hover-text">{title}</div>
                 </div>
             </div>
         );
