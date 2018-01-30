@@ -14,7 +14,12 @@ class Expgrid extends Component {
                             <Card
                                 key={id}
                                 className='card'
-                                cover={<img alt="example" src={exp.imgUrl} />}
+                                cover={
+                                    <img
+                                        alt="example"
+                                        src={exp.imgUrl}
+                                    />
+                                }
                             >
                                 <Meta
                                     title={exp.title}
