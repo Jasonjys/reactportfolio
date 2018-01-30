@@ -8,6 +8,7 @@ import Expgrid from './components/Expgrid/Expgrid';
 import Gallerygrid from './components/Gallerygrid/Gallerygrid';
 import Footer from './components/Footer/Footer';
 import exps from './components/Data/WorkExp';
+import projects from './components/Data/Projects';
 import './App.css';
 const { Content } = Layout;
 
@@ -37,7 +38,7 @@ class App extends Component {
                     <Content style={{ height:'100%', width: '100%' }}>
                         <Coverpage img={ CoverImg } />
                         <Expgrid exps={exps} />
-                        <Gallerygrid />
+                        <Gallerygrid items={projects} />
                         <Footer />
                     </Content>
                 </Layout>

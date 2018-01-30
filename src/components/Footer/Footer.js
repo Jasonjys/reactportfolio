@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { Layout, Spin, Icon } from 'antd';
-const { Content, Footer } = Layout;
+import { Layout } from 'antd';
+const { Footer } = Layout;
 import './Footer.css';
 
 class NavFooter extends Component {
