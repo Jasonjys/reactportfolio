@@ -1,7 +1,7 @@
 .item-container {
   display: flex;
-  max-height: 45%;
-  max-width: 45%;
+  height: 45%;
+  width: 45%;
   position: relative;
 }
 
@@ -26,4 +26,11 @@
 .no-padding {
   padding-right: 0;
   padding-left: 0;
+}
+
+@media (max-width: 500px) {
+  .item-container {
+    height: 30%;
+    width: 80%;
+  }
 }

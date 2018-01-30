@@ -7,19 +7,21 @@
 
 .grid-container {
     display: flex;
+    min-height: 100%;
+    height: auto;
     flex-direction: column;
     background-color: black;
     align-items: center;
-    height: 100%;
 }
 
 .card-container {
     display: flex;
+    margin-top: 60px;
     height: 80%;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -44,15 +46,16 @@
     border-color: black !important;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
+    .card {
+        width: 75%;
+        padding: 65px 0px !important;
+    }
     .exp-title {
         font-size: 30px;
     }
     .ant-card-body {
-        padding: 0;
-    }
-    .ant-card-cover {
-        height: 55%;
+        padding: 5px 0px !important;
     }
 }
 
