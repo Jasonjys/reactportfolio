@@ -7,6 +7,16 @@
 
 .image {
   width: 100%;
+  opacity: 1;
+}
+
+.item-container:hover .image{
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.item-container:hover .middle {
+  opacity: 1;
 }
 
 .hover-text {
@@ -16,6 +26,7 @@
 }
 
 .middle {
+  opacity: 0;
   transition: .5s ease;
   position: absolute;
   top: 50%;

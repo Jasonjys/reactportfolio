@@ -11,22 +11,11 @@ const customContentStyle = {
 class Imageitem extends Component {
     state = {
         visible: false,
-        hover: false,
         title: 'title'
     };
 
     render () {
-        let styleForImage, styleForTitle;
         const {title} = this.props || this.state;
-        if (this.state.hover) {
-            styleForImage = {opacity: '0.3', cursor: 'pointer'};
-            styleForTitle = {opacity: '1'};
-
-        } else {
-            styleForImage = {opacity: '1'}
-            styleForTitle = {opacity: '0'};
-        }
-
         const actions = [
             <FlatButton
                 label="Close"
@@ -39,18 +28,15 @@ class Imageitem extends Component {
             <div 
                 className="item-container"
                 onClick={() => this.setState({visible: true})}
-                onMouseEnter={() => this.setState({hover: true})}
-                onMouseLeave={() => this.setState({hover: false})}
             >
                 <div className='img-containner'>
                     <img
+                        className="image"
                         alt="project-img"
                         src={this.props.img}
-                        style={styleForImage}
-                        className="image"
                     />
                 </div>
-                <div className="middle" style={styleForTitle}>
+                <div className="middle">
                     <div className="hover-text">{title}</div>
                 </div>
                 <Dialog
