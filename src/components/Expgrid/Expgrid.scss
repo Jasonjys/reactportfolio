@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 500px) {
+    .card-container {
+        margin: 0;
+    }
     .card {
         width: 75%;
         padding: 65px 0px !important;
