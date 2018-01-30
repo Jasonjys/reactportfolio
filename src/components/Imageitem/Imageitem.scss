@@ -28,9 +28,19 @@
   padding-left: 0;
 }
 
+.img-containner {
+  display: flex;
+}
+
 @media (max-width: 500px) {
   .item-container {
-    height: 30%;
-    width: 80%;
+    width: 85%;
+    padding: 10px 0px;
+  }
+  .img-containner {
+    display: inline;
+  }
+  .image {
+    height: 225px;
   }
 }

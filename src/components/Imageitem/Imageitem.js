@@ -42,7 +42,7 @@ class Imageitem extends Component {
                 onMouseEnter={() => this.setState({hover: true})}
                 onMouseLeave={() => this.setState({hover: false})}
             >
-                <div style={{display: 'flex'}}>
+                <div className='img-containner'>
                     <img
                         alt="project-img"
                         src={this.props.img}
