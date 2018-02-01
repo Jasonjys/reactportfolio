@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu } from 'antd';
-import './Navbar.css'
+import './Navbar.css';
 const { Sider} = Layout;
 
 class Navbar extends Component {
