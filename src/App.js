@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Layout, Spin, Icon } from 'antd'
+import Layout from 'antd/lib/layout'
+import Spin from 'antd/lib/spin'
+import Icon from 'antd/lib/icon'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Navbar from './components/Navbar/Navbar'
 import Coverpage from './components/Coverpage/Coverpage'

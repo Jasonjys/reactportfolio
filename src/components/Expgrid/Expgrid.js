@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card } from 'antd'
+import Card from 'antd/lib/card'
 import './Expgrid.css'
 const { Meta } = Card
 

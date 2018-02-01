@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { Layout } from 'antd'
+import Layout from 'antd/lib/layout'
 import './Footer.css'
 const { Footer } = Layout
 
