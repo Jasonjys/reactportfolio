@@ -34,7 +34,8 @@
   padding-left: 0; }
 
 .img-containner {
-  display: flex; }
+  display: flex;
+  width: 100%; }
 
 @media (max-width: 500px) {
   .item-container {
