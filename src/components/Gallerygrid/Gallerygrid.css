@@ -1,24 +1,25 @@
 .gallery-container {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   width: 100%;
-  background-color: black; }
+  background-color: black;
+  justify-content: center;
+  align-items: center; }
 
 .gallery-title {
-  display: flex;
-  height: 10%;
+  text-align: center;
   color: white;
   font-size: 40px;
   font-weight: 600;
-  padding: 12px 32px;
-  justify-content: center; }
+  padding: 12px 32px; }
 
 .gallery-box {
   display: flex;
-  width: 100%;
+  width: 95%;
   height: 90%;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
 
 @media (max-width: 415px) {
   .gallery-title {
