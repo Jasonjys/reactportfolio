@@ -2,7 +2,12 @@
   "name": "reactportfolio",
   "version": "0.1.0",
   "plugins": [
-    ["import", {"libraryName": "antd"}]
+    [
+      "import",
+      {
+        "libraryName": "antd"
+      }
+    ]
   ],
   "private": true,
   "homepage": "http://jasonjys.github.io",
@@ -28,6 +33,7 @@
     "node-sass-chokidar": "0.0.1",
     "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5",
+    "sass-lint-auto-fix": "^0.7.0",
     "standard": "^10.0.3"
   },
   "scripts": {
@@ -39,6 +45,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "sass-lint --verbose",
+    "lint:fix": "sass-lint-auto-fix --verbose"
   }
 }

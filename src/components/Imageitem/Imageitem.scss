@@ -1,19 +1,19 @@
 .item-container {
   display: flex;
   height: 45%;
-  width: 47.5%;
   justify-content: center;
   position: relative;
+  width: 47.5%;
 }
 
 .image {
-  width: 100%;
   opacity: 1;
+  width: 100%;
 }
 
 .item-container:hover .image{
-  opacity: 0.3;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .item-container:hover .middle {
@@ -21,23 +21,23 @@
 }
 
 .hover-text {
-  color: white;
+  color: #fff;
   font-size: 30px;
   padding: 16px 32px;
 }
 
 .middle {
+  left: 50%;
   opacity: 0;
-  transition: .5s ease;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  transition: .5s ease;
 }
 
 .no-padding {
-  padding-right: 0;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .img-containner {
@@ -47,8 +47,8 @@
 
 @media (max-width: 500px) {
   .item-container {
+    padding: 10px 0;
     width: 85%;
-    padding: 10px 0px;
   }
   .img-containner {
     display: inline;

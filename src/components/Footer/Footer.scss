@@ -1,6 +1,6 @@
 .footer {
+    background-color: #000 !important;
     display: flex;
-    background-color: black !important;
     justify-content: center;
 }
 
@@ -9,9 +9,9 @@
 }
 
 .highlight {
-    color: deepskyblue;
+    color: #00bfff;
 }
 
 .highlight:hover {
-    color: deeppink;
+    color: #ff1493;
 }
