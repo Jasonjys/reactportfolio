@@ -5,13 +5,14 @@ import Icon from 'antd/lib/icon'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Navbar from './components/Navbar/Navbar'
 import Coverpage from './components/Coverpage/Coverpage'
-import CoverImg from './components/Coverpage/coverImg.jpg'
+import CoverImg from './components/Coverpage/coverImg-min.jpg'
 import Expgrid from './components/Expgrid/Expgrid'
 import Gallerygrid from './components/Gallerygrid/Gallerygrid'
 import Footer from './components/Footer/Footer'
 import exps from './components/Data/WorkExp'
 import projects from './components/Data/Projects'
 import './App.css'
+import 'antd/dist/antd.css'
 const { Content } = Layout
 
 class App extends Component {

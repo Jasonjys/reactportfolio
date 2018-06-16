@@ -1,3 +1,22 @@
+.project-img {
+  max-width: 350px; }
+
+.ant-card.ant-card-bordered {
+  background-color: #000;
+  border-color: #000;
+  height: 38%;
+  width: 42%;
+  padding: 25px; }
+  .ant-card.ant-card-bordered .ant-card-cover {
+    min-height: 170px;
+    max-height: 400px; }
+  .ant-card.ant-card-bordered .ant-card-body .ant-card-meta .ant-card-meta-detail .ant-card-meta-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600; }
+  .ant-card.ant-card-bordered .ant-card-body .ant-card-meta .ant-card-meta-detail .ant-card-meta-description {
+    color: #fff; }
+
 .exp-title {
   color: #fff;
   font-size: 40px;
@@ -22,36 +41,23 @@
   margin-top: 60px;
   width: 100%; }
 
-.ant-card-meta-title {
-  color: #fff !important;
-  font-size: 18px !important;
-  font-weight: 600 !important; }
-
-.ant-card-cover {
-  height: 70%; }
-
-.ant-card-meta-description {
-  color: #fff !important; }
-
-.card {
-  background-color: #000 !important;
-  border-color: #000 !important;
-  height: 38%;
-  width: 42%; }
-
 @media (max-width: 500px) {
+  .project-img {
+    max-width: 275px; }
   .card-container {
     margin: 0; }
-  .card {
-    padding: 65px 0 !important;
+  .ant-card.ant-card-bordered {
+    padding: 65px 0;
     width: 75%; }
+    .ant-card.ant-card-bordered .ant-card-cover {
+      min-height: 100px; }
+    .ant-card.ant-card-bordered .ant-card-body {
+      padding: 5px 0; }
   .exp-title {
-    font-size: 30px; }
-  .ant-card-body {
-    padding: 5px 0 !important; } }
+    font-size: 30px; } }
 
 @media (min-width: 970px) {
-  .ant-card-meta-title {
+  .ant-card.ant-card-bordered .ant-card-body .ant-card-meta .ant-card-meta-detail .ant-card-meta-title {
     font-size: 28px; }
-  .ant-card-meta-description {
+  .ant-card.ant-card-bordered .ant-card-body .ant-card-meta .ant-card-meta-detail .ant-card-meta-description {
     font-size: 20px; } }

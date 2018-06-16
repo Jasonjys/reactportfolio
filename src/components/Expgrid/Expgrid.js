@@ -13,9 +13,9 @@ class Expgrid extends Component {
             return (
               <Card
                 key={id}
-                className='card'
                 cover={
                   <img
+                    className='project-img'
                     alt='example'
                     src={exp.imgUrl}
                   />
