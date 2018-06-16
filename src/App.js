@@ -18,6 +18,7 @@ const { Content } = Layout
 class App extends Component {
   constructor (props) {
     super(props)
+    document.title = 'Jason Jiang'
     this.state = {
       loading: true
     }
