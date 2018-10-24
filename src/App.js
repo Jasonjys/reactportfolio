@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Layout from 'antd/lib/layout'
-import Spin from 'antd/lib/spin'
-import Icon from 'antd/lib/icon'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Navbar from './components/Navbar/Navbar'
 import Coverpage from './components/Coverpage/Coverpage'
@@ -9,6 +7,7 @@ import CoverImg from './components/Coverpage/coverImg-min.jpg'
 import Expgrid from './components/Expgrid/Expgrid'
 import Gallerygrid from './components/Gallerygrid/Gallerygrid'
 import Footer from './components/Footer/Footer'
+import TextLoading from './components/TextLoading/TextLoading'
 import exps from './components/Data/WorkExp'
 import projects from './components/Data/Projects'
 import './App.css'
@@ -25,17 +24,14 @@ class App extends Component {
   }
 
   componentDidMount () {
-    setTimeout(() => this.setState({ loading: false }), 1000)
+    setTimeout(() => this.setState({ loading: false }), 2400)
   }
 
   render () {
     const {loading} = this.state
-    const antIcon = <Icon spin type='loading' style={{ fontSize: 120 }} />
     if (loading) {
       return (
-        <div className='spin-container'>
-          <Spin indicator={antIcon} />
-        </div>
+        <TextLoading />
       )
     }
     return (
