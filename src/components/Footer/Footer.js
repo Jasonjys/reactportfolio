@@ -8,7 +8,7 @@ class NavFooter extends Component {
   render () {
     return (
       <Footer className='footer'>
-        <a href='https://www.linkedin.com/in/yaoshen-jiang-305572b0/' target='_blank'>
+        <a href='https://www.linkedin.com/in/yaoshenjiang/' target='_blank'>
           <div className='svg-container'>
             <FontAwesomeIcon icon={['fab', 'linkedin']} size='4x' className='highlight' />
           </div>

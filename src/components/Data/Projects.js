@@ -1,7 +1,7 @@
-import retrieve from '../../../public/img/portfolio/fullsize/retrieve.png'
-import passwordGrid from '../../../public/img/portfolio/fullsize/passwordGrid.png'
-import emberTask from '../../../public/img/portfolio/fullsize/emberTask.png'
-import image4 from '../../../public/img/portfolio/fullsize/4.jpg'
+import retrieve from '../../img/portfolio/fullsize/retrieve.png'
+import passwordGrid from '../../img/portfolio/fullsize/passwordGrid.png'
+import emberTask from '../../img/portfolio/fullsize/emberTask.png'
+import image4 from '../../img/portfolio/fullsize/4.jpg'
 
 export default [
   {
