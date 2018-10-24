@@ -4,7 +4,7 @@ import './TextLoading.css'
 export default () => {
   return (
     <div className='spin-container'>
-      <ul>
+      <ul className='loading-ui'>
         <li>L</li>
         <li>O</li>
         <li>A</li>
